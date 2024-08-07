@@ -82,6 +82,8 @@ const Update = () => {
         <label htmlFor="satisfaction">Satisfaction:</label>
         <input
           type="number"
+          max={5}
+          min={1}
           id="satisfaction"
           value={satisfaction}
           onChange={(e) => setSatisfaction(e.target.value)}
