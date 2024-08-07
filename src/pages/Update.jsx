@@ -20,7 +20,7 @@ const Update = () => {
 
     const { data, error } = await supabase
       .from('todos')
-      .update({ task, method, rating })
+      .update({ task, description, satisfaction })
       .eq('id', id)
       .select()
 
